@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "889e9b9f-b3dc-4b6d-91ca-42f0d9f2bdcb",
+		"name": "Projects",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16660574"
+	},
+	"item": [
+		{
+			"name": "URL Shortner",
+			"item": [
+				{
+					"name": "Create URL",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"url\": \"https://linktr.ee/aadijain7\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3030/url",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"url"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Redirect URL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3030/url/sX5WWNTuz",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"url",
+								"sX5WWNTuz"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Analytics",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3030/url/analytics/sX5WWNTuz",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"url",
+								"analytics",
+								"sX5WWNTuz"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
